@@ -33,15 +33,6 @@ void loop() {
        erssi = LoRa.packetRssi();
     }
 
-    Serial.print("Received packet: ");
-    Serial.println(counter);
-    Serial.print("Temperature in Celsius : ");
-    Serial.println(temp);
-    Serial.print("Relative Humidity : ");
-    Serial.println(humid);
-    Serial.print("' with RSSI ");
-    Serial.println(erssi);
-
     lcd.clear();
     lcd.setCursor(0, 0);       // start to print at the first row
     lcd.print(temp);    // print the temperature in Celsius
